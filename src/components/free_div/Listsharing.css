@@ -1,0 +1,66 @@
+.listsharing {
+    position: fixed;
+    bottom:100px;
+    right:-44px;
+    opacity: 0;
+    transition:0.5s linear;
+}
+.show_listsharing {
+    opacity: 1;
+    right:15px;
+}
+.listsharing .list_wrap {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.listsharing svg {
+    width: 44px;
+    height: 44px;
+    margin:0 0 10px 0;
+}
+
+.listsharing svg:hover {
+   box-shadow: 0 0 5px 5px silver;
+   border-radius:50%;
+}
+.listsharing .list_icon {
+    position: relative;
+    display: inline-block;
+}
+  
+.listsharing .tooltip_text {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 130%;
+    font-size: 12px;
+    white-space: nowrap;
+}
+  
+.listsharing .tooltip_text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.listsharing .list_icon:hover .tooltip_text {
+    visibility: visible;
+}
+
+@media screen and (max-width:768px) {
+    .listsharing {
+        opacity: 0;
+        right:-44px;
+    }
+}

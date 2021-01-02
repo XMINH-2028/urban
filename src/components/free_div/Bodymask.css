@@ -1,0 +1,16 @@
+.bodymask {
+    width: 100%;
+    height:100%;
+    position:fixed;
+    top: 0;
+    left:0;
+    z-index: 10;
+    display:none;
+}
+.bodymask_show {
+    display: block !important;
+}
+.bodymask_show1 {
+    display: block !important;
+    top:167px !important;
+}

@@ -1,0 +1,35 @@
+.listcontact {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #e7e7e7;
+    background-color: white;
+    width: 100%;
+}
+.listcontact svg    {
+    fill:#696969;
+    width: 44px;
+    height:44px;
+}
+.listcontact .messenger svg    {
+    transform: translateY(-10px);
+}
+.listcontact .listcontact_wrap {
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.listcontact .listcontact_wrap li {
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .listcontact {
+        display: flex;
+    }
+}

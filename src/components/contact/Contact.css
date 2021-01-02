@@ -1,0 +1,93 @@
+.lh-content{
+    margin: 15px 6% 50px 6%;
+}
+.lh-right{
+    background-color: white;
+}
+.lh-title h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #0975f5;
+  }
+.lh-title hr{
+    background-color: black;
+    height: 2px;
+    width: 40px;
+    float: left;
+    margin-bottom: 0;
+}
+
+.icon{
+    padding-top: 25px;
+    color: #6f6f6f;
+}
+.text1{
+    padding-top: 25px;
+    color: #6f6f6f;
+    font-size: 15px;
+}
+.text2{
+    color: #6f6f6f;
+    font-size: 15px;
+}
+.contact__info{
+    margin-top: 30px;
+}
+.contact__info input{
+    line-height: 40px;
+    font-size: 15px;
+    outline: none;
+}
+.ht{
+    width: 100%;
+    
+}
+.m__dt input{
+    width: 50%;
+}
+textarea{
+    width: 100%;
+    outline: none;
+}
+.terms{
+    margin: 10px;
+}
+.terms a{
+    text-decoration: none;  
+
+}
+.contact__info button {
+    background: #0975f5;
+    color: white;
+    border: 1px solid #0975f5;
+    z-index: 1;
+    position: relative;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .contact__info button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  .contact__info button:hover {
+    color: #0975f5;
+  }
+  .contact__info button:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+@media screen and (max-width: 1200px) {
+    .lh-content{
+        margin: 15px 15px 50px 15px;
+    }
+}

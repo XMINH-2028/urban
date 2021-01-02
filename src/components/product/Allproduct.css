@@ -1,0 +1,111 @@
+.allproduct .path_product,.allpr_main,.allpr_title {
+    padding:0px 6% 0px 6%;
+}
+.allproduct .allpr_main {
+    margin-bottom:60px;
+}
+.allproduct .allpr_main,.allpr_title {
+    padding-top:20px !important;
+}
+.allproduct .path_list {
+    list-style: none;
+    display: flex;
+}
+.allproduct .path_product .path_item:hover span {
+    color:#0975f5;
+}
+.allproduct .path_item:hover a {
+    color:#0975f5;
+}
+.allproduct h3 a {
+    font-weight: 600;
+    color:#0975f5;
+    font-size: 28px;
+}
+.allproduct h3 a:hover {
+    font-weight: 900;
+    color:#6d91e4;
+}
+.allproduct .allpr_title {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.allproduct .allpr_title .sort{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size:15px;
+    width: 163px;
+    cursor: pointer;
+}
+.allproduct .allpr_title .quicksort{
+    display: flex;
+    align-items: center;
+    font-size:15px;
+}
+.allproduct .allpr_title .quicksort {
+    position: relative;
+}
+.allproduct .allpr_title .quicksort select {
+    outline: none;
+    font-size:13px;
+    padding: 7px 15px 7px 25px;
+    cursor: pointer;    
+}
+.allproduct .allpr_title .quicksort .quicksort_label{
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    width: 35px;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.fa-sort-alpha-asc:before {
+    content: "\f15d";
+    margin-left: 10px;
+}
+.allproduct .fa-sliders:before {
+    content: "\f1de";
+}
+
+@media screen and (max-width:1200px) {
+    .allproduct .path_product,.allpr_main,.allpr_title {
+        padding:0 15px;
+    }
+}
+@media screen and (max-width:992px) {
+    .allproduct .allpr_title .sort{
+        order:2;
+        width: 30%;
+    }
+    .allproduct .allpr_title h3 {
+        order:1;
+        width: 100%;
+        font-size:22px;
+    }
+    .allproduct .allpr_title h3 a {
+        font-size:22px;
+    }
+    .allproduct .allpr_title .quicksort{
+        order:3;
+    }
+}
+@media screen and (max-width:576px) {
+    .allproduct .allpr_title .sort{
+        font-size: 13px;
+    }
+    .allproduct .path_product .path_item span {
+        font-size:13px;
+    }
+    .allproduct a span {
+        font-size:13px !important;
+    }
+}

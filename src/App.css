@@ -1,0 +1,23 @@
+.App {
+    overflow-x: hidden;
+}
+.mask_banner {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.maskbanner_show {
+    display: block !important;
+}
+.trans_back {
+    transition:0s !important;
+}
+.show_banner {
+    z-index: 5;
+}
+.filter_show {
+    left:0px !important;
+}
