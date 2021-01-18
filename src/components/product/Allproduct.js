@@ -18,8 +18,10 @@ class Allproduct extends Component {
 
     componentDidMount() {
         const product = deepCopyFunction(product_export());
+        const product_change = deepCopyFunction(product_export());
+        product_change.sort((a,b) => (this.change(a.name) > this.change(b.name)) ? 1 : ((this.change(a.name) < this.change(b.name)) ? -1 : 0));
         product.sort((a,b) => (this.change(a.name) > this.change(b.name)) ? 1 : ((this.change(a.name) < this.change(b.name)) ? -1 : 0));
-        this.setState({product,product_change:deepCopyFunction(product_export())});
+        this.setState({product,product_change});
     }
     onMouseEnter(e,z) {
         const product = this.state.product_change;
